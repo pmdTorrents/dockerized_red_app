@@ -1,3 +1,6 @@
+
+
+
 fill in config
 
 docker pull will9512/dockerized_red_app
@@ -25,12 +28,16 @@ close gui and rerun the above command to refresh the list (fixing)
 
 select one (or multiple) shows from the left then:
     - download audio - get tracks in format defined in config
+*************************************************************************************************
+*this worked before but is untested in docker so far
+
     - get and upload 
        -if flac only radial button is selected
          - searches red for the band, if the flac is missing (ONLY CHECKS THE CONCERT RECORDINGS CATAGORY) it will download the flac and upload to red with formatted descriptns and cover images. 
       - if transcode to mp3 is selected, searches red for the band:
         - if the flac is missing (ONLY CHECKS THE CONCERT RECORDINGS CATAGORY) it will download the flac, transcode to v0 and or 320 depending on whats missinf and upload to red with formatted descriptns and cover images.
         - if flac exists but v0 and/or 320 is missing it will downlaod flac from nugs and transcode/upload
+*************************************************************************************************
       - if you fill in tracker info and use deluge or rtorrent it will download the new torrent red makes and add to your client seeding
     
 when finished run:
